@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#1C682F</color>
+    <color name="colorPrimaryDark">#F4431B</color>
+    <color name="colorAccent">#F4431B</color>
+
+    <color name="colorWhite">#ffffff</color>
+
+    <color name="textTabBright">#ffffff</color>
+    <color name="textTabLight">#ffb08b</color>
+    <color name="textTabBlue">#012e0c</color>
+
+    <color name="inputGrey">#cccccc</color>
+    <color name="whitesmoke">#eeeeed</color>
+</resources>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_background"
+    tools:context="com.ellixar.app.customer.sembe.customerapp.LoginActivity">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/sembe_logo_imageBtn"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="72dp"
+        android:src="@drawable/profile_placeholder"
+        app:civ_border_color="@android:color/white"
+        app:civ_border_width="2dp" />
+
+    <TextView
+        android:id="@+id/header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="50dp"
+        android:layout_marginTop="210dp"
+        android:fontFamily="@font/nunito_semibold"
+        android:text="@string/welcome_to_sembe_customer_app"
+        android:textAlignment="center"
+        android:textColor="@color/textTabBright"
+        android:textSize="18sp"/>
+
+    <EditText
+        android:id="@+id/login_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header"
+        android:layout_marginEnd="35dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/input_background"
+        android:ems="10"
+        android:fontFamily="@font/nunito_semibold"
+        android:hint="@string/phone"
+        android:inputType="phone"
+        android:paddingBottom="8dp"
+        android:paddingEnd="20dp"
+        android:paddingStart="20dp"
+        android:paddingTop="8dp"
+        android:textColorHighlight="@color/textTabBright"
+        android:textColorLink="@color/textTabBlue"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/text_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login_phone"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="35dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/input_background"
+        android:ems="10"
+        android:fontFamily="@font/nunito_semibold"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:paddingBottom="8dp"
+        android:paddingEnd="20dp"
+        android:paddingStart="20dp"
+        android:paddingTop="8dp"
+        android:textColorHighlight="@color/textTabBright"
+        android:textColorLink="@color/textTabBlue"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/button_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_password"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="35dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/input_background"
+        android:fontFamily="@font/nunito_semibold"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp"
+        android:text="@string/login_to_my_account"
+        android:textAllCaps="false"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/button_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button_login"
+        android:layout_marginEnd="35dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button_border"
+        android:fontFamily="@font/nunito_semibold"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp"
+        android:text="@string/don_t_have_an_account"
+        android:textAllCaps="false"
+        android:textColor="@color/colorPrimary"
+        android:textSize="14sp" />
+
+    <ProgressBar
+        android:id="@+id/login_progressbar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:indeterminate="true"
+        android:visibility="invisible"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>

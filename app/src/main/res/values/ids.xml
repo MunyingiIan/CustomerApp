@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="receive_notification_from_name" type="id">1</item>
+    <item name="receiver_notification_message" type="id">1</item>
+</resources>

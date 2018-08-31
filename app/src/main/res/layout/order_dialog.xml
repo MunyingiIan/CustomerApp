@@ -1,0 +1,144 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#ffffffff">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:id="@+id/a"
+        android:gravity="center"
+        android:src="@drawable/grooming7"
+        android:scaleType="fitCenter"
+        android:contentDescription="77" />
+
+    <TextView
+        android:id="@+id/product_id_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kadogo"
+        android:layout_marginTop="20dp"
+        android:textSize="18sp"
+        android:textColor="#ff000000"
+        android:gravity="center_horizontal"
+        android:layout_below="@+id/a"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/text_dialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1 Kg"
+        android:textSize="12sp"
+        android:textColor="#ff000000"
+        android:gravity="center_horizontal"
+        android:layout_below="@+id/product_id_textView"
+        android:layout_centerHorizontal="true" />
+
+
+        <!--//main-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/text_dialog">
+
+
+
+            <!--******PRODUCT QUANTITY TO SELL********-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:padding="16dp">
+
+
+                <customfonts.MyTextView
+                    android:id="@+id/product_quantity_to_sell"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/no_of_bales"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="12sp"
+                    android:textAlignment="center"/>
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:padding="16dp"
+                android:layout_marginBottom="20dp">
+
+
+                <ImageView
+                    android:id="@+id/product_count_minus"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_minus_24dp"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="12dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.6"
+                    android:orientation="vertical">
+
+                    <!--******to be replaced with counter********-->
+                    <customfonts.MyEditText
+                        android:id="@+id/p_quantity_to_sell"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#00000000"
+                        android:maxLines="1"
+                        android:textColor="@color/colorPrimary"
+                        android:inputType="number"
+                        android:textAlignment="center"
+                        android:focusable="true">
+                        <requestFocus />
+                    </customfonts.MyEditText>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#dad8d8" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/product_count_add"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_plus_24dp"
+                    android:text="@string/no_of_bales"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="12dp" />
+            </LinearLayout>
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/add_to_order_list"
+                android:id="@+id/btn_dialog_save_changes"
+                android:background="@color/colorPrimary"
+                android:textColor="#ffffffff"
+                android:paddingBottom="0dp"/>
+
+        </LinearLayout>
+    <!--******SAVE******-->
+
+</RelativeLayout>

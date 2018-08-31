@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_background"
+    tools:context="com.ellixar.app.customer.sembe.customerapp.LoginActivity">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/sembe_logo_imageBtn"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="72dp"
+        android:src="@drawable/profile_placeholder"
+        app:civ_border_color="@android:color/white"
+        app:civ_border_width="2dp" />
+
+
+    <Button
+        android:id="@+id/button_place_order"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sembe_logo_imageBtn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="35dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/input_background"
+        android:fontFamily="@font/nunito_semibold"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp"
+        android:text="@string/place_order"
+        android:textAllCaps="false"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/button_view_order"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button_place_order"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="35dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/input_background"
+        android:fontFamily="@font/nunito_semibold"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp"
+        android:text="@string/view_orders"
+        android:textAllCaps="false"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/button_view_payments"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button_view_order"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="35dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/input_background"
+        android:fontFamily="@font/nunito_semibold"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp"
+        android:text="@string/view_payments"
+        android:textAllCaps="false"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/button_account"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button_view_payments"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="35dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/input_background"
+        android:fontFamily="@font/nunito_semibold"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp"
+        android:text="@string/account"
+        android:textAllCaps="false"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp" />
+
+
+    <ProgressBar
+        android:id="@+id/login_progressbar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:indeterminate="true"
+        android:visibility="invisible"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>

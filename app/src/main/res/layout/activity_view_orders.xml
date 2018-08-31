@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_background"
+    tools:context="com.ellixar.app.customer.sembe.customerapp.LoginActivity">
+
+
+    <TextView
+        android:id="@+id/header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="50dp"
+        android:layout_marginTop="100dp"
+        android:fontFamily="@font/nunito_semibold"
+        android:text="@string/view_orders"
+        android:textAlignment="center"
+        android:textColor="@color/textTabBright"
+        android:textSize="24sp"/>
+
+
+
+    <Button
+        android:id="@+id/button_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header"
+        android:layout_marginEnd="35dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button_border"
+        android:fontFamily="@font/nunito_semibold"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp"
+        android:text="@string/cancel"
+        android:textAllCaps="false"
+        android:textColor="@color/textTabBright"
+        android:textSize="14sp" />
+
+    <ProgressBar
+        android:id="@+id/login_progressbar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:indeterminate="true"
+        android:visibility="invisible"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>

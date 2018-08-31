@@ -1,0 +1,50 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   android:layout_margin="0dp"
+    tools:context="com.ellixar.app.customer.sembe.customerapp.BusinessFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/fragment_background"
+        android:layout_margin="15dp">
+
+        <Button
+            android:id="@+id/profilebtn_add_business"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="35dp"
+            android:layout_marginStart="35dp"
+            android:background="@drawable/primary_color_btn_bg"
+            android:fontFamily="@font/nunito_semibold"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp"
+            android:text="@string/add_a_business"
+            android:textAllCaps="false"
+            android:textColor="@color/textTabBright"
+            android:textSize="16sp" />
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/frg_users_recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </android.support.v7.widget.RecyclerView>
+
+        <ProgressBar
+            android:id="@+id/frg_users_progressBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:indeterminate="true"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+</FrameLayout>

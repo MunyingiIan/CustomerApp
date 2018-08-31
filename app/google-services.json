@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "193166514998",
+    "firebase_url": "https://sembe-api.firebaseio.com",
+    "project_id": "sembe-api",
+    "storage_bucket": "sembe-api.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:193166514998:android:f658baaa7013bd1b",
+        "android_client_info": {
+          "package_name": "com.ellixar.app.customer.sembe.customerapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "193166514998-afdtu7smfsu366f5vc824a0a0sj1ctlf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCxKB2in7-51UKb2stffvzkGwBDheUVyGI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

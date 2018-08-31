@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">Sembe Customer App</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="profile">My Profile</string>
+    <string name="all_businesses">All my Business(s)</string>
+    <string name="notifications">Notifications</string>
+    <string name="welcome_to_sembe_customer_app">Welcome to Sembe Customer App</string>
+    <string name="phone">Phone…</string>
+    <string name="password">Password…</string>
+    <string name="login_to_my_account">Login to my account</string>
+    <string name="don_t_have_an_account">Don\'t have an account ?</string>
+    <string name="name">name</string>
+    <string name="back_to_login">Back to Login</string>
+    <string name="logout_of_this_account">Logout of this Account</string>
+    <string name="username">Username</string>
+    <string name="enter_notification_to_send"> Enter message to send…</string>
+    <string name="default_notification_channel_id">SHOW_CASE_FRIENDS_1</string>
+    <string name="menu">Main Menu</string>
+    <string name="place_order">Place order</string>
+    <string name="view_orders">View orders</string>
+    <string name="account">My account</string>
+    <string name="add_a_business">Add a Business</string>
+    <string name="view_payments">View payments</string>
+    <string name="sample_placeholder">Sample placeholder</string>
+    <string name="cancel">Cancel</string>
+    <string name="create_a_business">Create a business</string>
+    <string name="business_name">Business name</string>
+    <string name="create_a_new_account">Create a new Account</string>
+    <string name="business_phone">Business Phone</string>
+    <string name="location">Location</string>
+    <string name="business_location">Business location</string>
+    <string name="view_order">View and Complete order</string>
+    <string name="add_items_to_order_by_clicking_them_from_the_list_below">Add items to order by clicking them from the list below:</string>
+    <string name="add_to_order_list">Add to order list</string>
+    <string name="repeat_password">Repeat password…</string>
+    <string name="your_phone_number">Your Phone number</string>
+    <string name="clear_order_list">CLEAR ORDER LIST</string>
+    <string name="no_of_bales">No. of Bales:</string>
+</resources>

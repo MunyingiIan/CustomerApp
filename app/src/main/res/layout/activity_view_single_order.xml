@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ellixar.app.customer.sembe.customerapp.LoginActivity">
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingBottom="14dp">
+            <!--android:layout_below="@id/toolbar"-->
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#dad8d8"
+                android:gravity="bottom"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="8dp">
+
+                <customfonts.MyTextView
+                    android:id="@+id/btn_clear_cart"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#f11d11"
+                    android:drawableRight="@drawable/ic_delete_24dp"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:text="@string/clear_order_list"
+                    android:textColor="#fff"
+                    android:textSize="16dp" />
+
+                <!--******TITLE: Customer Detail *******-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingTop="6dp">
+
+
+                    <customfonts.MyTextView
+                        android:id="@+id/shipping"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Select your business as a location of order delivery:"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="12sp" />
+
+
+                </LinearLayout>
+
+                <!--******Transaction type select*******-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:padding="8dp">
+
+                    <Spinner
+                        android:id="@+id/choose_supplier_spinner"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent" />
+
+                    <customfonts.MyTextView
+                        android:id="@+id/btn_add_a_business"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorPrimary"
+                        android:gravity="center"
+                        android:padding="8dp"
+                        android:text="@string/add_a_business"
+                        android:textColor="#fff"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+
+                <!--******Customer Phone Number*******-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:padding="8dp">
+
+
+                    <customfonts.MyTextView
+                        android:id="@+id/customer_id_textView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/your_phone_number"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="12sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.6"
+                        android:orientation="vertical">
+
+                        <EditText
+                            android:id="@+id/customer_phone_number"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#00000000"
+                            android:inputType="number"
+                            android:maxLines="1"
+                            android:textColor="@color/colorPrimary"
+                            android:focusable="false"
+                            tools:ignore="TextFields" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="#dad8d8" />
+
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <ListView
+                android:id="@+id/listview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="89dp"
+                android:isScrollContainer="false"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_above="@+id/amount"
+            android:background="#dad8d8"
+            android:elevation="1dp"
+            android:gravity="bottom"/>
+
+
+        <!--******TOTAL*******-->
+
+        <LinearLayout
+            android:id="@+id/amount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/btn_sell"
+            android:background="#fff"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+
+            <customfonts.MyTextView
+                android:id="@+id/total_textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="TOTAL AMOUNT"
+                android:textColor="#333333"
+                android:textSize="12dp"/>
+
+
+            <customfonts.MyTextView
+
+                android:id="@+id/total_cart_value"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.6"
+                android:background="#00000000"
+                android:gravity="right"
+                android:text="KES. 000"
+                android:textColor="#333333"
+                android:textSize="18dp"/>
+
+
+        </LinearLayout>
+
+
+        <customfonts.MyTextView
+            android:id="@+id/btn_sell"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:drawableRight="@drawable/ic_arrow_forward_24dp"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="COMPLETE SALE"
+            android:textColor="#fff"
+            android:textSize="16dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+    </RelativeLayout>
+
+    <ProgressBar
+        android:id="@+id/login_progressbar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:indeterminate="true"
+        android:visibility="invisible"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>
